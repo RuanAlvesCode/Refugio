@@ -1,0 +1,107 @@
+:root {
+  /* PALETA DE CORES */
+  --color-lavender: #c8b8e8;
+  --color-lavender-lt: #e8e0f5;
+  --color-lavender-dk: #9b84cc;
+  --color-sage: #9cbf9c;
+  --color-sage-lt: #d4e8d4;
+  --color-sage-dk: #6a9c6a;
+  --color-blush: #f0c8c0;
+  --color-blush-lt: #fce8e4;
+  --color-warm-cream: #faf7f2;
+  --color-warm-white: #fffef9;
+  --color-sand: #e8ddd0;
+  --color-brown: #6b5244;
+  --color-brown-lt: #a07860;
+  --color-text: #2d2420;
+  --color-text-muted: #7a6860;
+  --color-border: #e0d8d0;
+
+  /* CORES DE EMERGÊNCIA */
+  --color-emergency: #c0392b;
+  --color-emergency-lt: #fdecea;
+
+  /* ESPAÇAMENTO */
+  --sp-xs: 0.5rem;
+  --sp-sm: 1rem;
+  --sp-md: 1.5rem;
+  --sp-lg: 2.5rem;
+  --sp-xl: 4rem;
+  --sp-2xl: 6rem;
+
+  /* FONTES */
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "DM Sans", system-ui, sans-serif;
+
+  /* ARRENDONDAMENTO DE BORDAS */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 28px;
+  --radius-xl: 48px;
+
+  /* SOMBRAS */
+  --shadow-sm: 0 1px 4px rgba(45, 36, 32, 0.06);
+  --shadow-md: 0 4px 20px rgba(45, 36, 32, 0.1);
+  --shadow-lg: 0 12px 48px rgba(45, 36, 32, 0.12);
+
+  /* TRANSIÇÃO */
+  --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ESTILOS GLOBAIS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  line-height: 1.65;
+  color: var(--color-text);
+  background-color: var(--color-warm-white);
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- CLASSES PARA ACESSIBILIDADE --- */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+:focus-visible {
+  outline: 2.5px solid var(--color-lavender-dk);
+  outline-offset: 3px;
+  border-radius: 4px;
+}

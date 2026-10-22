@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Refúgio - Apoio seguro e discreto para mulheres em situação de violência" />
+  <title>Refúgio — Você não está sozinha</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" />
+</head>
+
+<body>
+
+  <!-- BOTÃO DE PÂNICO -->
+  <button id="panic-btn" class="panic-btn" aria-label="Sair rapidamente do site" title="Saída rápida">
+    <i class="hgi hgi-stroke hgi-rounded hgi-logout-square-01 panic-btn-icon"></i>
+    <span class="panic-btn-text">Sair</span>
+  </button>
+
+  <header class="header" role="banner">
+    <div class="header-container">
+      <a href="./index.html" class="logo" aria-label="Refúgio - Página inicial">
+        <span class="logo-icon" aria-hidden="true">◈</span>
+        <span class="logo-text">Refúgio</span>
+      </a>
+
+      <button class="nav-toggle" id="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-container" id="nav-container" role="navigation" aria-label="Navegação principal">
+        <ul class="nav-menu" role="list">
+          <li><a href="index.html" class="nav-link active" aria-current="page">Início</a></li>
+          <li><a href="reconhecer.html" class="nav-link">Reconhecer</a></li>
+          <li><a href="apoio.html" class="nav-link">Rede de Apoio</a></li>
+          <li><a href="denuncia.html" class="nav-link">Denúncia</a></li>
+          <li><a href="comunidade.html" class="nav-link">Comunidade</a></li>
+          <li><a href="emergencia.html" class="nav-link nav-link--emergency">Emergência</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-shape shape-1"></div>
+        <div class="hero-shape shape-2"></div>
+        <div class="hero-shape shape-3"></div>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-text">
+          <p class="hero-eyebrow">Você não está sozinha</p>
+          <h1 id="hero-title" class="hero-title">
+            Um lugar seguro<br />
+            <em>para encontrar ajuda</em>
+          </h1>
+          <p class="hero-desc">
+            Recursos discretos, seguros e acolhedores para mulheres
+            em situação de violência ou vulnerabilidade.
+            Tudo aqui é anônimo e protegido.
+          </p>
+          <div class="hero-actions">
+            <a href="reconhecer.html" class="btn btn--primary">Preciso de ajuda</a>
+            <a href="apoio.html" class="btn btn--outline">Encontrar apoio</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-card">
+            <div class="hero-card__inner">
+              <span class="hero-card__icon">🌿</span>
+              <p class="hero-card__text">Este site pode ser fechado instantaneamente com o botão <strong>"✕
+                  Sair"</strong> no canto da tela.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features section" aria-labelledby="features-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="features-title" class="section-title">Como podemos ajudar</h2>
+          <p class="section-desc">Ferramentas pensadas para sua proteção e autonomia</p>
+        </header>
+        <div class="features-grid">
+
+          <article class="feature-card" aria-labelledby="feat1-title">
+            <div class="feature-card__icon" aria-hidden="true">🔒</div>
+            <h3 id="feat1-title" class="feature-card__title">Navegação segura</h3>
+            <p class="feature-card__desc">Modo disfarçado e saída rápida para proteger sua privacidade durante o uso.
+            </p>
+            <button class="feature-card__action" onclick="activateDisguise()">Ativar modo disfarce</button>
+          </article>
+
+          <article class="feature-card" aria-labelledby="feat2-title">
+            <div class="feature-card__icon" aria-hidden="true">📍</div>
+            <h3 id="feat2-title" class="feature-card__title">Rede de Apoio</h3>
+            <p class="feature-card__desc">Encontre delegacias, hospitais e centros de acolhimento próximos a você.</p>
+            <a href="apoio.html" class="feature-card__action">Ver locais de apoio</a>
+          </article>
+
+          <article class="feature-card" aria-labelledby="feat3-title">
+            <div class="feature-card__icon" aria-hidden="true">💜</div>
+            <h3 id="feat3-title" class="feature-card__title">Identifique o abuso</h3>
+            <p class="feature-card__desc">Quiz anônimo para reconhecer comportamentos abusivos e o ciclo de violência.
+            </p>
+            <a href="reconhecer.html" class="feature-card__action">Fazer o teste</a>
+          </article>
+
+          <article class="feature-card" aria-labelledby="feat4-title">
+            <div class="feature-card__icon" aria-hidden="true">🗂️</div>
+            <h3 id="feat4-title" class="feature-card__title">Cofre de evidências</h3>
+            <p class="feature-card__desc">Armazene fotos, áudios e documentos com criptografia e proteção por senha.</p>
+            <a href="denuncia.html#cofre" class="feature-card__action">Acessar cofre</a>
+          </article>
+
+          <article class="feature-card" aria-labelledby="feat5-title">
+            <div class="feature-card__icon" aria-hidden="true">✉️</div>
+            <h3 id="feat5-title" class="feature-card__title">Denúncia segura</h3>
+            <p class="feature-card__desc">Canal de denúncia com criptografia e garantia total de anonimato.</p>
+            <a href="denuncia.html" class="feature-card__action">Fazer denúncia</a>
+          </article>
+
+          <article class="feature-card" aria-labelledby="feat6-title">
+            <div class="feature-card__icon" aria-hidden="true">🤝</div>
+            <h3 id="feat6-title" class="feature-card__title">Comunidade</h3>
+            <p class="feature-card__desc">Espaço anônimo de escuta e troca de experiências com outras mulheres.</p>
+            <a href="comunidade.html" class="feature-card__action">Conhecer a comunidade</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CYCLE AWARENESS -->
+    <section class="awareness section" aria-labelledby="awareness-title">
+      <div class="container awareness-container">
+        <div class="awareness-content">
+          <p class="eyebrow">Informação é proteção</p>
+          <h2 id="awareness-title" class="section-title">O ciclo da violência</h2>
+          <p>
+            A violência doméstica raramente é apenas física. Ela ocorre em ciclos —
+            tensão, explosão, reconciliação e lua de mel — que se repetem e se intensificam
+            ao longo do tempo. Reconhecer esses padrões é o primeiro passo.
+          </p>
+          <a href="reconhecer.html" class="btn btn--primary" style="margin-top: 1.5rem;">
+            Entender melhor
+          </a>
+        </div>
+        <div class="awareness-visual" aria-hidden="true">
+          <div class="cycle-diagram">
+            <div class="cycle-ring cycle-ring--outer"></div>
+            <div class="cycle-ring cycle-ring--inner"></div>
+            <div class="cycle-steps">
+              <div class="cycle-step" style="--angle: 0deg"><span>Tensão</span></div>
+              <div class="cycle-step" style="--angle: 90deg"><span>Explosão</span></div>
+              <div class="cycle-step" style="--angle: 180deg"><span>Reconciliação</span></div>
+              <div class="cycle-step" style="--angle: 270deg"><span>Lua de mel</span></div>
+            </div>
+            <div class="cycle-center">
+              <span>Ciclo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EMERGENCY NUMBERS -->
+    <section class="emergency section" aria-labelledby="emergency-title">
+      <div class="container">
+        <h2 id="emergency-title" class="section-title text-center">Números de emergência</h2>
+        <p class="section-desc text-center">Ligue agora — é gratuito, sigiloso e funciona 24h</p>
+        <div class="emergency-grid">
+          <a href="tel:180" class="emergency-card" aria-label="Ligar para Central de Atendimento à Mulher - 180">
+            <span class="emergency-card__number">180</span>
+            <span class="emergency-card__label">Central de Atendimento à Mulher</span>
+            <span class="emergency-card__note">Denúncia, orientação e apoio</span>
+          </a>
+          <a href="tel:190" class="emergency-card" aria-label="Ligar para Polícia Militar - 190">
+            <span class="emergency-card__number">190</span>
+            <span class="emergency-card__label">Polícia Militar</span>
+            <span class="emergency-card__note">Emergência imediata</span>
+          </a>
+          <a href="tel:192" class="emergency-card" aria-label="Ligar para SAMU - 192">
+            <span class="emergency-card__number">192</span>
+            <span class="emergency-card__label">SAMU</span>
+            <span class="emergency-card__note">Urgência médica</span>
+          </a>
+          <a href="tel:100" class="emergency-card" aria-label="Ligar para Disque Direitos Humanos - 100">
+            <span class="emergency-card__number">100</span>
+            <span class="emergency-card__label">Disque Direitos Humanos</span>
+            <span class="emergency-card__note">Violações e denúncias</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST SECTION -->
+    <section class="trust section" aria-labelledby="trust-title">
+      <div class="container trust-container">
+        <h2 id="trust-title" class="sr-only">Nossa garantia de segurança</h2>
+        <div class="trust-item">
+          <span class="trust-icon" aria-hidden="true">🔐</span>
+          <h3>Criptografia</h3>
+          <p>Todos os dados e formulários são protegidos com criptografia de ponta a ponta.</p>
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon" aria-hidden="true">👁️‍🗨️</span>
+          <h3>Anonimato total</h3>
+          <p>Não coletamos dados pessoais. Suas respostas e relatos são completamente anônimos.</p>
+        </div>
+        <div class="trust-item">
+          <span class="trust-icon" aria-hidden="true">🚪</span>
+          <h3>Saída rápida</h3>
+          <p>O botão "✕ Sair" apaga o histórico da sessão e redireciona em menos de 1 segundo.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" aria-label="Refúgio - Página inicial">
+          <span class="logo-icon" aria-hidden="true">◈</span>
+          <span class="logo-text">Refúgio</span>
+        </a>
+        <p>Um espaço seguro e acolhedor para mulheres em situação de violência.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Links do rodapé">
+        <h3 class="footer-nav__title">Páginas</h3>
+        <ul role="list">
+          <li><a href="reconhecer.html">Reconhecer</a></li>
+          <li><a href="apoio.html">Rede de Apoio</a></li>
+          <li><a href="denuncia.html">Denúncia</a></li>
+          <li><a href="comunidade.html">Comunidade</a></li>
+          <li><a href="emergencia.html">Emergência</a></li>
+        </ul>
+      </nav>
+      <div class="footer-info">
+        <h3 class="footer-nav__title">Ligue agora</h3>
+        <p><a href="tel:180"><strong>180</strong> — Central da Mulher</a></p>
+        <p><a href="tel:190"><strong>190</strong> — Polícia</a></p>
+        <p><a href="tel:192"><strong>192</strong> — SAMU</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>Projeto acadêmico — IFCE Campus Iguatu · Análise e Projeto de Sistemas 2026</p>
+      <button class="btn-disguise-footer" onclick="activateDisguise()" aria-label="Ativar modo disfarçado">Modo
+        disfarce</button>
+    </div>
+  </footer>
+
+  <!-- DISGUISE OVERLAY (receitas) -->
+  <div id="disguise-overlay" class="disguise-overlay" role="dialog" aria-modal="true"
+    aria-label="Modo disfarçado ativado" hidden>
+    <nav class="disguise-nav">
+      <span class="disguise-logo">🍴 Receitas da Vovó</span>
+      <button onclick="deactivateDisguise()" aria-label="Desativar modo disfarçado"
+        class="disguise-close">Voltar</button>
+    </nav>
+    <div class="disguise-content">
+      <h1>Receitas Deliciosas</h1>
+      <p>Bolo de cenoura, pudim, feijoada e muito mais...</p>
+      <div class="disguise-cards">
+        <div class="disguise-card">🥕 Bolo de Cenoura</div>
+        <div class="disguise-card">🍮 Pudim de Leite</div>
+        <div class="disguise-card">🫘 Feijoada Completa</div>
+        <div class="disguise-card">🍰 Torta de Limão</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

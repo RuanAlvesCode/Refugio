@@ -1,0 +1,56 @@
+/* --- PANIC BUTTON --- */
+.panic-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+
+  background: var(--color-emergency);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+
+  font: 500 0.85rem var(--font-sans);
+
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(192, 57, 43, 0.35);
+  transition: var(--transition);
+}
+
+.panic-btn-icon {
+  font-size: 1.4rem;
+  transform: translateY(10px);
+  transition: var(--transition);
+}
+
+.panic-btn-text {
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.panic-btn:hover {
+  background: #a93226;
+  transform: scale(1.05);
+}
+
+.panic-btn:hover .panic-btn-text {
+  opacity: 1;
+}
+
+.panic-btn:hover .panic-btn-icon {
+  transform: translateY(0);
+}
+
+.panic-btn:focus-visible {
+  outline-color: white;
+}
